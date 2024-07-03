@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+h1,h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo img{
+   position: absolute;
+   width: 100px;
+   height: 87px;
+   border-radius: none;
+   box-shadow: none;
+   bottom: 87%;
+   cursor: pointer;
+}
+
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    color: white;
+}
+
+.secondary-btn{
+    padding: 15px 40px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+/*--------header----------*/
+header{
+    margin-top: 2px;
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 20px;
+}
+
+header img{
+    margin: 20px 0;
+}
+
+header ul{
+    display: inline-block;
+}
+
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header ul li a{
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s;
+    display: block;
+    border-radius: 3px;    
+}
+header ul li a:hover{
+    color: #444;
+    background: #7fc142;
+   
+}
+
+header ul li a:hover,
+header ul li a.current{
+    color: #444;
+    background: #7fc142;
+    
+}
+
+header i{
+    margin: 0 20px;
+}
+
+header button{
+    padding: 13px 40px;
+}
+
+header .menu i{
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    header ul{
+        position: absolute;
+        top:100px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #009f7f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+    }
+
+    header ul li{
+        display: block;
+    }
+
+    header li a{
+        color: white;
+    }
+
+    header i{
+        color: white;
+    }
+    header .menu i{
+        color: #000;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+    }
+    .owl-carousel .owl-nav .owl-prev {
+        left: 0%;
+    }
+}
+/*--------header----------*/
+/*--------home----------*/
+.home{
+    height: 100vh;
+    color: #fff;
+}
+.home img{
+    width: 100%;
+    height: 100vh;
+}
+.home .text{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.home .text h1{
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+}
+.home p{
+    margin: 20px 0;
+}
+.home button {
+    margin-right: 60px;
+}
+.owl-nav .owl-prev,.owl-nav .owl-next{
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+}
+
+.owl-nav .owl-prev{
+    left: 0;
+}
+.owl-nav .owl-next{
+    right: 0;
+}
+
+
+/*--------home----------*/
+/*--------Book----------*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.book{
+    padding: 40px 0;
+    background: #131E3A;
+    color: #fff;
+}
+
+h1{
+    font-family: serif;
+}
+
+.book h1{
+    font-size: 28px;
+}
+
+.book h1 span{
+    color: #7fc142;
+}
+
+.book input{
+    padding: 20px;
+}
+
+.book input:nth-last-child(1){
+    background: #7fc142;
+    color: #fff;
+}
+
+/*--------Book----------*/
+/*--------about----------*/
+.left, .right{
+    width: 50%;
+    padding: 30px;
+}
+
+.top{
+    margin-top: 80px;
+}
+
+.mtop{
+    margin-top: 40px;
+}
+
+.heading h1{
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+
+.heading h2{
+    margin: 30px 0;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+}
+
+.about .heading h1{
+    top: 55px;
+}
+
+.about{
+    position: relative;
+}
+
+.about .left{
+    margin-top: 30px;
+}
+
+.about p{
+    font-size: 15px;
+}
+
+.about button{
+    margin: 30px 0;
+}
+/*--------about----------*/
+/*--------counter----------*/
+
+.counter {
+
+    background-image: url("image/background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    color: #fff;
+
+  }
+  
+  .counter .grid {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 60px;
+  }
+.counter .grid .box{
+    box-shadow: #000;
+}  
+.counter h1{
+    font-size: 50px;
+}
+
+.counter hr{
+    width: 50%;
+    margin: 10px auto;
+    background: #7fc142;
+    height: 2px;
+    border: none;
+}
+/*--------counter----------*/
+/*--------rooms----------*/
+.rooms{
+    position: relative;
+}
+.rooms .text{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    padding: 30px;
+}
+.rooms i{
+    font-size: 12px;
+    color: #fbb234;
+    margin: 20px 0;
+    margin-right: 5px;
+}
+.rooms p{
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.rooms h3{
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #7fc142;
+}
+
+.rooms h3 span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.owl-carousel1 .owl-nav .owl-prev,
+.owl-carousel1 .owl-nav .owl-next {
+  position: absolute;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  background: #7fc142 !important;
+}
+
+.owl-carousel1 .owl-nav .owl-prev i,
+.owl-carousel1 .owl-nav .owl-next i {
+  color: #fff;
+}
+
+.owl-carousel1 .owl-nav .owl-prev {
+  left: 90%;
+}
+
+.owl-carousel1 .owl-nav .owl-next {
+  right: 0;
+}
+/*--------rooms----------*/
+
+
+
+
+/*--------About Info----------*/
+#about-info .info-right{
+    padding: 20px 0;   
+    text-align: center; 
+ }
+ #about-info .info-right img{
+    position: relative;
+    width: 360px;
+    height: 300px;
+    border-radius: 2%;
+    box-shadow: #000;
+    bottom: 100%;
+    cursor: pointer;    
+ }
+ #about-info .info-left{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: serif;
+    
+ }
+ 
+ .info-left h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: 400;
+ }
+ .info-left h1 span{
+    color: #7fc142;
+}
+ 
+ 
+ /*--------About Info----------*/
+
+ /*--------testimonials----------*/
+
+ #testimonials{
+    height: 70%;
+    background-image: url("image/background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    place-items: center;
+    padding: 50px 0;
+   
+  
+ }
+
+ #testimonials .container{
+    text-align: center;
+    float: center;
+    
+ }
+ #testimonials h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+ }
+.back-primary img{
+    
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -2%;
+    cursor: pointer; 
+    float: center;
+
+}
+.back-primary p{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+#testimonials .testimonial {
+    background-color: #fff;
+    border-radius: 30px;
+    flex-direction: column;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    row-gap: 30px;
+}
+.testimonial i{
+    font-size: 30px;
+    color: #4070f4;
+}
+.testimonial .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.owl-carousel .owl-nav .owl-prev i,
+.owl-carousel .owl-nav .owl-next i {
+  color: #fff;
+}
+.owl-nav .owl-prev,.owl-nav .owl-next{
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+}
+
+.owl-nav .owl-prev{
+    left: 0;
+}
+.owl-nav .owl-next{
+    right: 0;
+}
+
+@media only screen and (max-width:768px){
+    .owl-carousel .owl-nav .owl-prev {
+        left: 0%;
+        
+    }
+    
+}
+ /*--------testimonials----------*/
+ 
+/*--------footer----------*/
+footer{
+    background: #282834;
+    color: #b6b7b9;
+    padding: 10% 0 5% 0;
+}
+
+footer .grid{
+    grid-template-columns: 3.5fr 3.5fr 3.5fr;
+}
+
+.box img{
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 20px;
+   border-color: #fff;
+   box-shadow: none;
+   bottom: 2%;
+   cursor: pointer;
+
+}
+
+footer p{
+    color: #b6b7b9;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+footer .icon i{
+    margin-top: 60px;
+    margin: 20px 20px 20px 0;
+    color: #b6b7b9;
+}
+
+footer h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.box a{
+    color: #b6b7b9;
+}
+.box a:hover{
+    color: #7fc142;
+    transition: 0.5s;
+}
+
+footer li{
+    margin-bottom: 20px;
+}
+
+footer i{
+    color: #7fc142;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+footer label{
+    margin-top: 15px;
+    margin: 20px 0;
+    margin-bottom: 20px;
+   
+    
+}
+
+
+.legal{
+    padding: 15px 0;
+    background: #282834;
+    color: #b6b7b9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+/*--------footer----------*/
+@media only screen and (max-width:768px){
+    .home{
+        color: #fff;
+        height: 50vh;
+    }
+    .home img{
+        width: 100%;
+        height: 50vh;
+    }
+    .left,.right{
+        width: 100%;
+    }
+    .book h1{
+        margin-bottom: 20px;
+    }
+    .container.flex,.book .flex_space{
+        flex-direction: column;
+    }
+    .book .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .counter .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .owl-carousel1 .owl-nav .owl-prev {
+        left: 80%;
+    }
+    .rooms .owl-nav .owl-prev,
+    .rooms .owl-nav .owl-next {
+        top: -30%;
+    }
+    footer .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
